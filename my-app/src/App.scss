@@ -1,0 +1,15 @@
+@import 'index.scss';
+
+.fake-header {
+  height: $header-height;
+}
+
+main {
+  padding: 15px;
+  height: calc(100vh - $header-height);
+  background-image: url('assets/bg.png');
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

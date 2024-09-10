@@ -1,0 +1,30 @@
+@import './styles/mixins/fonts';
+
+body {
+  margin: 0;
+  @include font-main-normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+$main-bg: #3f829e;
+$main-text: #ffffff;
+$additional-text: #d1ae80;
+
+$header-height: 140px;
