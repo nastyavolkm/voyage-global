@@ -1,0 +1,19 @@
+@mixin font-main-regular() {
+  font-family: 'Acrom Regular', sans-serif;
+}
+
+@mixin font-main-medium() {
+  font-family: 'Acrom Medium', sans-serif;
+}
+
+@mixin font-main-bold() {
+  font-family: 'Acrom Bold', sans-serif;
+}
+
+@mixin font-main-normal() {
+  font-family: 'Acrom Normal', sans-serif;
+}
+
+@mixin font-additional() {
+  font-family: 'Amadeus', sans-serif;
+}

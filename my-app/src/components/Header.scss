@@ -1,0 +1,17 @@
+@import '../index.scss';
+
+.header {
+  height: $header-height;
+  position: fixed;
+  background-color: $main-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  color: $main-text;
+
+  &__logo {
+    height:100%;
+    width: auto;
+  }
+}
