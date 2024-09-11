@@ -1,14 +1,14 @@
 @import '../index.scss';
 
 .contacts-page {
-  padding: 10px;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
 
   &__wrapper {
-    padding: 0 120px;
+    padding: 20px 5rem;
   }
 
   &__address {
