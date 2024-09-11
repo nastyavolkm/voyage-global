@@ -9,6 +9,7 @@ import './App.scss';
 import { TourSearchPage } from "./pages/TourSearchPage";
 import { NewsPage } from "./pages/NewsPage";
 import { Footer } from "./components/Footer";
+import { FeedbacksPage } from "./pages/FeedbackPage";
 
 function App() {
     return (
@@ -16,7 +17,6 @@ function App() {
             <Header/>
             <div className='fake-header'></div>
             <main>
-                <Navigation/>
                 <Routes>
                     <Route
                         path='/'
@@ -37,6 +37,10 @@ function App() {
                     <Route
                         path='/news'
                         element={<NewsPage/>}
+                    ></Route>
+                    <Route
+                        path='/feedback'
+                        element={<FeedbacksPage/>}
                     ></Route>
                 </Routes>
                 <Footer/>

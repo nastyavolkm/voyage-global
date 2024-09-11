@@ -5,13 +5,20 @@
   position: fixed;
   background-color: $main-bg;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
   width: 100%;
   color: $main-text;
+  z-index: 10;
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   &__logo {
-    height:100%;
+    height: 140px;
     width: auto;
   }
 }

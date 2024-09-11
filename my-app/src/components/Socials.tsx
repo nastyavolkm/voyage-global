@@ -8,7 +8,7 @@ export function Socials() {
             {socials.map((item) => <a
                 href={item.value}
                 target='_blank'
-                title={item.value}
+                title={item.id}
                 key={item.id}
                 className='socials__item'
             >

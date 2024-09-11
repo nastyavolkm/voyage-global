@@ -8,6 +8,7 @@ main {
   padding: 15px;
   height: calc(100vh - $header-height);
   background-image: url('assets/bg.png');
+  background-size: cover;
   overflow: auto;
   display: flex;
   flex-direction: column;
