@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/voyage-global/static/css/main.3ba7d696.css",
-    "main.js": "/voyage-global/static/js/main.2af7bdb3.js",
+    "main.css": "/voyage-global/static/css/main.e130c703.css",
+    "main.js": "/voyage-global/static/js/main.96d95c9b.js",
     "static/js/453.ed3810f9.chunk.js": "/voyage-global/static/js/453.ed3810f9.chunk.js",
     "static/media/Voyage_Global_svg_free2-01.png": "/voyage-global/static/media/Voyage_Global_svg_free2-01.de6cad3f515660c7f066.png",
     "static/media/Voyage_Global_svg_free1-01.png": "/voyage-global/static/media/Voyage_Global_svg_free1-01.e4ba641e498bb58dbe6b.png",
@@ -18,18 +18,21 @@
     "static/media/AVA_2.png": "/voyage-global/static/media/AVA_2.91ed1d3c65cadf11f4e8.png",
     "static/media/viber.png": "/voyage-global/static/media/viber.b9d28971b90c7fff0760.png",
     "static/media/mobile.png": "/voyage-global/static/media/mobile.023c7e566e58263b5d52.png",
+    "static/media/2.jpg": "/voyage-global/static/media/2.911d63b99cb38590a63a.jpg",
     "static/media/Voyage_Global_svg_Blue.svg": "/voyage-global/static/media/Voyage_Global_svg_Blue.bb006afb2d048edbbd67.svg",
     "static/media/Voyage_Global_svg_White.svg": "/voyage-global/static/media/Voyage_Global_svg_White.0dc289abaf9648818845.svg",
     "static/media/AVA.png": "/voyage-global/static/media/AVA.e66625e954b51af4f497.png",
+    "static/media/1.jpg": "/voyage-global/static/media/1.597229c6394ed334d75d.jpg",
+    "static/media/3.jpg": "/voyage-global/static/media/3.76491f77aa05413c65ed.jpg",
     "static/media/Voyage_Global_svg_gold-01.svg": "/voyage-global/static/media/Voyage_Global_svg_gold-01.16d7cdccae6f7f19cf85.svg",
     "static/media/telegram.svg": "/voyage-global/static/media/telegram.d524ce60a5271a2d84bb.svg",
     "index.html": "/voyage-global/index.html",
-    "main.3ba7d696.css.map": "/voyage-global/static/css/main.3ba7d696.css.map",
-    "main.2af7bdb3.js.map": "/voyage-global/static/js/main.2af7bdb3.js.map",
+    "main.e130c703.css.map": "/voyage-global/static/css/main.e130c703.css.map",
+    "main.96d95c9b.js.map": "/voyage-global/static/js/main.96d95c9b.js.map",
     "453.ed3810f9.chunk.js.map": "/voyage-global/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ba7d696.css",
-    "static/js/main.2af7bdb3.js"
+    "static/css/main.e130c703.css",
+    "static/js/main.96d95c9b.js"
   ]
 }
