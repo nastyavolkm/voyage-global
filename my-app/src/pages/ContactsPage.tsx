@@ -1,5 +1,5 @@
 import React from 'react';
-import addressIcon from '../assets/AVA.png';
+import addressIcon from '../assets/location.svg';
 import { address } from "../configs/address";
 import './ContactsPage.scss';
 

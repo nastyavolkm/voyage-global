@@ -1,13 +1,13 @@
 @import './styles/mixins/fonts';
 
 body {
-  margin: 0;
+  margin: 20px 40px;
   @include font-main-normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
-  overflow: hidden;
   position: relative;
+  background-image: url('assets/bg-3.jpg');
+  background-size: cover;
 
   a {
     text-decoration: none;
@@ -27,4 +27,4 @@ $main-bg: #3f829e;
 $main-text: #ffffff;
 $additional-text: #d1ae80;
 
-$header-height: 180px;
+$header-height: 140px;

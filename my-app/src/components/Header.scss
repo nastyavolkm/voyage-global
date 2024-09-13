@@ -2,23 +2,25 @@
 
 .header {
   height: $header-height;
-  position: fixed;
-  background-color: $main-bg;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: inherit;
   color: $main-text;
-  z-index: 10;
 
   &__wrapper {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+
+    &.with-bg {
+      background-color: $main-text;
+      padding: 0 10px;
+    }
   }
 
   &__logo {
-    height: 140px;
+    height: calc($header-height - 48px);
     width: auto;
   }
 }
