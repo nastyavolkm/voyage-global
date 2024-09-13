@@ -1,18 +1,21 @@
 export const contacts = [
     {
         id: 'телефон',
-        icon: 'phone',
-        value: '+375-17-888-77-66'
+        icon: 'phone.svg',
+        value: '+375-17-888-77-66',
+        action: 'tel:'
     },
     {
         id: 'мобильный',
-        icon: 'mobile',
+        icon: 'phone.svg',
         value: '+375-44-999-888-77',
+        action: 'tel:',
     },
     {
         id: 'email',
-        icon: 'mobile',
+        icon: 'email.svg',
         value: 'nikaborko@mail.ru',
+        action: 'mailto:',
     }
 ];
 
@@ -24,7 +27,7 @@ export const socials = [
     },
     {
         id: 'telegram',
-        icon: 'telegram.svg',
+        icon: 'telegram.png',
         value: 'https://www.t.me/vglobalminsk',
     },
     {

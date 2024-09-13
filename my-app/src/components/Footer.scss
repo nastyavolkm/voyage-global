@@ -1,8 +1,13 @@
+@import '../index.scss';
+
 .footer {
   width: 100%;
   display: flex;
   align-items: center;
+  gap: 20px;
   justify-content: center;
-  padding: 10px 200px;
+  padding: 10px;
   margin-top: auto;
+  color: $main-text;
+  background: $main-bg;
 }

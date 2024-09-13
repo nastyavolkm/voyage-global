@@ -1,10 +1,9 @@
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
-import { MainPage } from "./pages/MainPage";
 import { AboutPage } from "./pages/AboutPage";
 import { Header } from "./components/Header";
 import { ContactsPage } from "./pages/ContactsPage";
-import { Navigation } from "./components/Navigation";
+import './styles/custom-scroll.scss';
 import './App.scss';
 import { TourSearchPage } from "./pages/TourSearchPage";
 import { NewsPage } from "./pages/NewsPage";
@@ -15,16 +14,11 @@ function App() {
     return (
         <>
             <Header/>
-            <div className='fake-header'></div>
             <main>
                 <Routes>
                     <Route
                         path='/'
                         element={<TourSearchPage/>}
-                    ></Route>
-                    <Route
-                        path='/main'
-                        element={<MainPage/>}
                     ></Route>
                     <Route
                         path='/about'
