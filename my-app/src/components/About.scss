@@ -9,26 +9,38 @@
   padding: 0 20px 20px;
   color: $main-bg;
 
+  &__text {
+    flex: 1;
+  }
+
+  &__img {
+    max-width: 300px;
+    width: 300px;
+    height: auto;
+  }
+
   &__wrapper {
     width: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     background: $main-text;
-    padding: 10px;
+    padding: 20px;
   }
 
   &__ceo {
+    width: 70%;
     background: $main-bg;
     align-self: flex-end;
     color: $main-text;
-    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 
     &-contacts {
       display: flex;
@@ -41,6 +53,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       gap: 10px;
     }
 
@@ -51,10 +64,14 @@
       height: 200px;
       background-size: cover;
     }
+
+    &-text {
+      flex: 1;
+    }
   }
 
   &__managers {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -66,7 +83,6 @@
       justify-content: space-between;
       background: $main-text;
       padding: 10px;
-      max-width: 300px;
       text-align: center;
 
       &-contacts {
@@ -76,24 +92,21 @@
         width: 100%;
 
         &-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
         }
       }
 
       &-img {
-        width: 200px;
-        height: 200px;
+        min-width: 100px;
+        max-width: 200px;
+        height: 100px;
+        max-height: 200px;
         border-radius: 50%;
         background-size: cover;
       }
     }
-  }
-
-  &__img {
-    width: 300px;
-    height: auto;
   }
 }

@@ -30,7 +30,7 @@ export function About() {
                         className='about__ceo-img'
                         style={{ backgroundImage: `url(${require(`../assets/${ceo.avatar}`)})` }}
                     />
-                    <span>{ceo.text}</span>
+                    <span className='about__ceo-text'>{ceo.text}</span>
                 </div>
                 <div className='about__ceo-contacts'>Связаться со мной: {ceo.contacts.map((contact) => <a
                         key={contact.id}
