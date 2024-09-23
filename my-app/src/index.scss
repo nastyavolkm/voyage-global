@@ -1,7 +1,8 @@
 @import './styles/mixins/fonts';
 
 body {
-  margin: 20px 40px;
+  margin: 0;
+  padding-top: 20px;
   @include font-main-normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

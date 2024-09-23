@@ -37,8 +37,8 @@ function App() {
                         element={<FeedbacksPage/>}
                     ></Route>
                 </Routes>
-                <Footer/>
             </main>
+            <Footer/>
         </>
     )
 }
