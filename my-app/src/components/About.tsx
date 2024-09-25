@@ -13,6 +13,7 @@ export function About() {
                     alt='офис'
                 />
                 <div className='about__text'>
+                    <p className='about__text bold'>Кто мы?</p>
                     <p>Наша компания Вояж Глобал предоставляет широкий спектр туристических услуг. Мы поможем вам
                         подобрать тур,
                         который подойдет именно вам. Мы работаем с лучшими туроператорами и гарантируем вам качество
@@ -25,27 +26,27 @@ export function About() {
                 </div>
             </div>
             <div className='about__ceo'>
+                <div
+                    className='about__ceo-img'
+                    style={{ backgroundImage: `url(${require(`../assets/${ceo.avatar}`)})` }}
+                />
                 <div className='about__ceo-wrapper'>
-                    <div
-                        className='about__ceo-img'
-                        style={{ backgroundImage: `url(${require(`../assets/${ceo.avatar}`)})` }}
-                    />
                     <span className='about__ceo-text'>{ceo.text}</span>
-                </div>
-                <div className='about__ceo-contacts'>Связаться со мной: {ceo.contacts.map((contact) => <a
-                        key={contact.id}
-                        href={`${contact.action}${contact.value}`}
-                        target='_blank'
-                        className='contacts__item'
-                    >
-                        <img
-                            className='contacts__item-img'
-                            src={require(`../assets/${contact.icon}`)}
-                            alt={contact.id}
-                        />
-                        {contact.value}
-                    </a>
-                )}
+                    <div className='about__ceo-contacts'>Связаться со мной: {ceo.contacts.map((contact) => <a
+                            key={contact.id}
+                            href={`${contact.action}${contact.value}`}
+                            target='_blank'
+                            className='contacts__item'
+                        >
+                            <img
+                                className='contacts__item-img'
+                                src={require(`../assets/${contact.icon}`)}
+                                alt={contact.id}
+                            />
+                            {contact.value}
+                        </a>
+                    )}
+                    </div>
                 </div>
             </div>
             <div className='about__managers'>{managers.map((manager) => <div

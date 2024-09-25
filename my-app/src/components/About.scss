@@ -1,4 +1,5 @@
 @import '../index.scss';
+@import '../styles/mixins/fonts';
 
 .about {
   display: flex;
@@ -10,24 +11,31 @@
   color: $main-bg;
 
   &__text {
+    padding: 40px;
     flex: 1;
+
+    &.bold {
+      font-size: 18px;
+      @include font-main-medium;
+      padding: 0;
+      margin-bottom: 10px;
+    }
   }
 
   &__img {
-    max-width: 300px;
-    width: 300px;
+    max-width: 400px;
+    width: 400px;
     height: auto;
   }
 
   &__wrapper {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
     background: $main-text;
-    padding: 20px;
   }
 
   &__ceo {
@@ -36,11 +44,8 @@
     align-self: flex-end;
     color: $main-text;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap;
 
     &-contacts {
       display: flex;
@@ -51,17 +56,17 @@
 
     &-wrapper {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-wrap: wrap;
       gap: 10px;
+      padding: 40px;
     }
 
     &-img {
-      flex: 0 0 200px;
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
+      flex: 0 0 250px;
+      width: 250px;
+      height: 250px;
       background-size: cover;
     }
 
