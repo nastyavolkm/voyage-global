@@ -1,0 +1,117 @@
+@import '../index.scss';
+@import '../styles/mixins/fonts';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px 20px;
+  color: $main-bg;
+
+  &__text {
+    padding: 40px;
+    flex: 1;
+
+    &.bold {
+      font-size: 18px;
+      @include font-main-medium;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+    max-width: 400px;
+    width: 400px;
+    height: auto;
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: $main-text;
+  }
+
+  &__ceo {
+    width: 70%;
+    background: $main-bg;
+    align-self: flex-end;
+    color: $main-text;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    &-contacts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 40px;
+    }
+
+    &-img {
+      flex: 0 0 250px;
+      width: 250px;
+      height: 250px;
+      background-size: cover;
+    }
+
+    &-text {
+      flex: 1;
+    }
+  }
+
+  &__managers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      background: $main-text;
+      padding: 10px;
+      text-align: center;
+
+      &-contacts {
+        background: $main-bg;
+        color: $main-text;
+        padding: 5px;
+        width: 100%;
+
+        &-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+
+      &-img {
+        min-width: 100px;
+        max-width: 200px;
+        height: 100px;
+        max-height: 200px;
+        border-radius: 50%;
+        background-size: cover;
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@ import './FeedbackPage.scss';
 export function FeedbacksPage() {
     return (
         <div className='feedback'>
-            <div style={{ width: '560px', height: '800px', overflow: 'hidden', position: 'relative' }}>
+            <div style={{ width: '100%', maxWidth: '560px', height: '800px', overflow: 'hidden', position: 'relative' }}>
                 <iframe
                     style={{
                         width: '100%',

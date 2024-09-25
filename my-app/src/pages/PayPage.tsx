@@ -1,10 +1,10 @@
 import React from 'react';
 import { About } from "../components/About";
 
-export function AboutPage() {
+export function PayPage() {
     return (
         <div>
-            <About/>
+            Варианты оплаты
         </div>
     )
 }
