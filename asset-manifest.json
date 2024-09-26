@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/voyage-global/static/css/main.dd7b819e.css",
-    "main.js": "/voyage-global/static/js/main.3b430712.js",
+    "main.css": "/voyage-global/static/css/main.df60e977.css",
+    "main.js": "/voyage-global/static/js/main.f1d1522d.js",
     "static/js/453.ed3810f9.chunk.js": "/voyage-global/static/js/453.ed3810f9.chunk.js",
     "static/media/Voyage_Global_svg_free2-01.png": "/voyage-global/static/media/Voyage_Global_svg_free2-01.5649fd82a7e8d058ca91.png",
     "static/media/Voyage_Global_svg_free1-01.png": "/voyage-global/static/media/Voyage_Global_svg_free1-01.e4ba641e498bb58dbe6b.png",
@@ -9,8 +9,12 @@
     "static/media/bg-2.jpeg": "/voyage-global/static/media/bg-2.fca879caa4bfcec11bd6.jpeg",
     "static/media/bg.png": "/voyage-global/static/media/bg.b8e49dbf7245983a95fa.png",
     "static/media/bg-1.jpg": "/voyage-global/static/media/bg-1.988e9a7aa894bf89459e.jpg",
+    "static/media/office-about.jpg": "/voyage-global/static/media/office-about.b25f29a73b886c23ead2.jpg",
+    "static/media/ceo.jpg": "/voyage-global/static/media/ceo.b837a54222f36ea8f94f.jpg",
     "static/media/tour-search.png": "/voyage-global/static/media/tour-search.26529e34e6c7b76df321.png",
     "static/media/office.jpg": "/voyage-global/static/media/office.826823e4ae70ba8d2519.jpg",
+    "static/media/manager1.jpg": "/voyage-global/static/media/manager1.b0dedd420233705d24d0.jpg",
+    "static/media/manager.jpg": "/voyage-global/static/media/manager.bb84ea3c9ffff4ef7bfe.jpg",
     "static/media/Acrom-Bold.otf": "/voyage-global/static/media/Acrom-Bold.2a9f475787e8fa3a8a8d.otf",
     "static/media/Acrom-Medium.otf": "/voyage-global/static/media/Acrom-Medium.aefcb0c7b6d6f18ea89b.otf",
     "static/media/Acrom-Regular.otf": "/voyage-global/static/media/Acrom-Regular.654165122fede49287be.otf",
@@ -25,12 +29,12 @@
     "static/media/email.svg": "/voyage-global/static/media/email.17501af4b6e0bb9f5727.svg",
     "static/media/location.svg": "/voyage-global/static/media/location.ff50e44be32588fcde306ab559646a67.svg",
     "index.html": "/voyage-global/index.html",
-    "main.dd7b819e.css.map": "/voyage-global/static/css/main.dd7b819e.css.map",
-    "main.3b430712.js.map": "/voyage-global/static/js/main.3b430712.js.map",
+    "main.df60e977.css.map": "/voyage-global/static/css/main.df60e977.css.map",
+    "main.f1d1522d.js.map": "/voyage-global/static/js/main.f1d1522d.js.map",
     "453.ed3810f9.chunk.js.map": "/voyage-global/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd7b819e.css",
-    "static/js/main.3b430712.js"
+    "static/css/main.df60e977.css",
+    "static/js/main.f1d1522d.js"
   ]
 }
