@@ -7,12 +7,19 @@
   flex-wrap: wrap;
   gap: 5px;
   width: 100%;
+  padding: 10px 0;
 
   &__item {
     padding: 0 10px;
     color: $main-bg;
     font-size: 18px;
     @include font-main-normal;
+    text-align: end;
+
+    &:hover {
+        color: $additional-text;
+        transition: 150ms ease-out;
+    }
 
     &.active {
       color: $additional-text;

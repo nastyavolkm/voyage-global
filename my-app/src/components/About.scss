@@ -1,18 +1,21 @@
 @import '../index.scss';
 @import '../styles/mixins/fonts';
+@import '../styles/animations/slidein';
 
 .about {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 0 20px 20px;
+  gap: 30px;
+  padding: 20px;
   color: $main-bg;
 
   &__text {
-    padding: 40px;
+    padding: 30px;
     flex: 1;
+    text-align: justify;
 
     &.bold {
       font-size: 18px;
@@ -36,22 +39,32 @@
     flex-wrap: wrap;
     gap: 30px;
     background: $main-text;
+    animation-duration: 1s;
+    animation-name: slidein;
   }
 
   &__ceo {
-    width: 70%;
-    background: $main-bg;
-    align-self: flex-end;
-    color: $main-text;
+    width: 100%;
+    color: $main-bg;
+    background: $main-text;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
+    animation-duration: 1s;
+    animation-name: slidein;
 
     &-contacts {
+      width: 100%;
+      padding: 5px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
+      flex-wrap: wrap;
       gap: 10px;
+      background: $main-bg;
+      color: $main-text;
     }
 
     &-wrapper {
@@ -60,7 +73,9 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
-      padding: 40px;
+      padding: 30px;
+      flex-wrap: wrap;
+      flex: 1;
     }
 
     &-img {
@@ -72,6 +87,7 @@
 
     &-text {
       flex: 1;
+      text-align: justify;
     }
   }
 
@@ -79,6 +95,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 
     &-item {
@@ -91,6 +108,9 @@
       text-align: center;
 
       &-contacts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: $main-bg;
         color: $main-text;
         padding: 5px;
@@ -113,5 +133,9 @@
         background-size: cover;
       }
     }
+  }
+
+  .contacts__item {
+    width: max-content;
   }
 }

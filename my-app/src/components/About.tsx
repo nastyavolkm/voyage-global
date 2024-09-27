@@ -63,7 +63,7 @@ export function About() {
                         key={contact.id}
                         href={`${contact.action}${contact.value}`}
                         target='_blank'
-                        className='about__managers-item-contacts-item'
+                        className='contacts__item'
                     >
                         <img
                             className='contacts__item-img'

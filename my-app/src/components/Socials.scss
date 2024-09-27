@@ -8,6 +8,11 @@
   &__item {
     border-radius: 50%;
 
+    &:hover {
+      transform: scale(1.1);
+      transition: 150ms all;
+    }
+
     &-img {
       width: 24px;
       height: 24px;

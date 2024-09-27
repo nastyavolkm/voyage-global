@@ -1,15 +1,13 @@
 import React from 'react';
 import './Contacts.scss';
 import { contacts } from "../configs/contacts";
-import map from '../assets/location.svg';
-import { address } from "../configs/address";
 
 export function Contacts() {
     return (
         <div className='contacts'>
             {contacts.map((contact) => <a
                 key={contact.id}
-                href={`${contact.action}${contact.value}`}
+                href={`${contact.id !== 'address' ?  contact.action+contact.value : contact.action}`}
                 target='_blank'
                 className='contacts__item'
             >
@@ -20,14 +18,6 @@ export function Contacts() {
                 />
                 {contact.value}
             </a>)}
-            <div className='contacts__item address'>
-                <img
-                    className='contacts__item-img'
-                    src={map}
-                    alt='офис'
-                />
-                <span>{address}</span>
-            </div>
         </div>
     )
 }
