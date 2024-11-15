@@ -1,26 +1,24 @@
 {
   "files": {
-    "main.css": "/voyage-global/static/css/main.5206e0e4.css",
-    "main.js": "/voyage-global/static/js/main.6dfa7efa.js",
+    "main.css": "/voyage-global/static/css/main.9c9e6e4d.css",
+    "main.js": "/voyage-global/static/js/main.e113688e.js",
     "static/js/453.ed3810f9.chunk.js": "/voyage-global/static/js/453.ed3810f9.chunk.js",
-    "static/media/bg.jpeg": "/voyage-global/static/media/bg.e9263c95d2eef290205e.jpeg",
+    "static/media/bg-5.png": "/voyage-global/static/media/bg-5.a35ca6b5aea885614d28.png",
+    "static/media/4.jpg": "/voyage-global/static/media/4.cb8ea14f3875927dd8c4.jpg",
+    "static/media/2.jpg": "/voyage-global/static/media/2.4c95e913eb7609b53606.jpg",
+    "static/media/3.jpg": "/voyage-global/static/media/3.f66a76f4697e5293a601.jpg",
+    "static/media/ceo.jpg": "/voyage-global/static/media/ceo.125f1629e97658c63c77.jpg",
+    "static/media/manager1.jpg": "/voyage-global/static/media/manager1.889e5c0de7f7e9ba287c.jpg",
+    "static/media/1.jpg": "/voyage-global/static/media/1.778b32c4a59a3407784c.jpg",
     "static/media/Voyage_Global_svg_free2-01.png": "/voyage-global/static/media/Voyage_Global_svg_free2-01.5649fd82a7e8d058ca91.png",
     "static/media/Voyage_Global_svg_free1-01.png": "/voyage-global/static/media/Voyage_Global_svg_free1-01.e4ba641e498bb58dbe6b.png",
-    "static/media/bg-3.jpg": "/voyage-global/static/media/bg-3.c1859c00e272f66ba1a5.jpg",
-    "static/media/bg-2.jpeg": "/voyage-global/static/media/bg-2.fca879caa4bfcec11bd6.jpeg",
-    "static/media/bg.png": "/voyage-global/static/media/bg.b8e49dbf7245983a95fa.png",
-    "static/media/bg-1.jpg": "/voyage-global/static/media/bg-1.988e9a7aa894bf89459e.jpg",
-    "static/media/office-about.jpg": "/voyage-global/static/media/office-about.b25f29a73b886c23ead2.jpg",
-    "static/media/ceo.jpg": "/voyage-global/static/media/ceo.b837a54222f36ea8f94f.jpg",
     "static/media/tour-search.png": "/voyage-global/static/media/tour-search.26529e34e6c7b76df321.png",
     "static/media/office.jpg": "/voyage-global/static/media/office.826823e4ae70ba8d2519.jpg",
-    "static/media/jpg": "/voyage-global/static/media/38dbbd30c172cf226c94031da350e44b.012fa29c9708c8aa8117.jpg",
-    "static/media/manager1.jpg": "/voyage-global/static/media/manager1.b0dedd420233705d24d0.jpg",
-    "static/media/manager.jpg": "/voyage-global/static/media/manager.bb84ea3c9ffff4ef7bfe.jpg",
     "static/media/Acrom-Bold.otf": "/voyage-global/static/media/Acrom-Bold.2a9f475787e8fa3a8a8d.otf",
     "static/media/Acrom-Medium.otf": "/voyage-global/static/media/Acrom-Medium.aefcb0c7b6d6f18ea89b.otf",
     "static/media/Acrom-Regular.otf": "/voyage-global/static/media/Acrom-Regular.654165122fede49287be.otf",
     "static/media/acrom300.otf": "/voyage-global/static/media/acrom300.2dae520589734e02913a.otf",
+    "static/media/pay-logo.png": "/voyage-global/static/media/pay-logo.7027c32c0c982eed37a3.png",
     "static/media/ofont.ru_AmadeusAP.ttf": "/voyage-global/static/media/ofont.ru_AmadeusAP.f710e5024f6acada5839.ttf",
     "static/media/AVA_2.png": "/voyage-global/static/media/AVA_2.91ed1d3c65cadf11f4e8.png",
     "static/media/Voyage_Global_svg_Blue.svg": "/voyage-global/static/media/Voyage_Global_svg_Blue.bb006afb2d048edbbd67.svg",
@@ -31,12 +29,12 @@
     "static/media/email.svg": "/voyage-global/static/media/email.17501af4b6e0bb9f5727.svg",
     "static/media/location.svg": "/voyage-global/static/media/location.ff50e44be32588fcde30.svg",
     "index.html": "/voyage-global/index.html",
-    "main.5206e0e4.css.map": "/voyage-global/static/css/main.5206e0e4.css.map",
-    "main.6dfa7efa.js.map": "/voyage-global/static/js/main.6dfa7efa.js.map",
+    "main.9c9e6e4d.css.map": "/voyage-global/static/css/main.9c9e6e4d.css.map",
+    "main.e113688e.js.map": "/voyage-global/static/js/main.e113688e.js.map",
     "453.ed3810f9.chunk.js.map": "/voyage-global/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5206e0e4.css",
-    "static/js/main.6dfa7efa.js"
+    "static/css/main.9c9e6e4d.css",
+    "static/js/main.e113688e.js"
   ]
 }
