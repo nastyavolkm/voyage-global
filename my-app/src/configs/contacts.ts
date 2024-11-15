@@ -16,6 +16,12 @@ export const contacts = [
         icon: 'email.svg',
         value: 'nikaborko@mail.ru',
         action: 'mailto:',
+    },
+    {
+        id: 'address',
+        icon: 'location.svg',
+        value: 'Минск, ул.Веры Хоружей, 3, 3-й этаж',
+        action: 'https://yandex.by/maps/-/CDTQJTye',
     }
 ];
 

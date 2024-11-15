@@ -1,29 +1,43 @@
 @import '../index.scss';
+@import '../styles/animations/slidein';
 
 .contacts-page {
-  padding: 0 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  color: $main-text;
+  overflow: hidden;
 
-  &__wrapper {
-    padding: 20px 5rem;
+  &__contacts {
+    background: $main-bg;
+    color: $main-text;
+    animation-duration: 1s;
+    animation-name: slidein;
+    border-radius: 20px;
   }
 
-  &__address {
-    width: 100%;
-    display: flex;
-    gap: 5px;
+  &__heading {
+    @include font-main-medium;
+    font-size: 18px;
+    padding: 10px 0 10px 10px;
+  }
 
-    &-icon {
-      width: 20px;
-      height: 20px;
-    }
+  &__text {
+    background: $main-text;
+    color: $main-bg;
+    padding: 10px;
+    animation-duration: 1s;
+    animation-name: slidein;
+    width: 100%;
+    align-self: center;
+    border-radius: 20px;
   }
 
   &__map {
     box-shadow: 5px 5px 5px 0px $additional-text;
+    animation-duration: 1s;
+    animation-name: slidein;
+    align-self: center;
+    width: 80%;
   }
 }

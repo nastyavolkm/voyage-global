@@ -7,8 +7,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background-image: url('assets/bg-3.jpg');
+  background-image: url('assets/bg-5.png');
   background-size: cover;
+
+  @media (max-width: 650px) {
+    background-size: 400% 50%;
+  }
 
   a {
     text-decoration: none;
@@ -26,6 +30,7 @@ body {
 
 $main-bg: #3f829e;
 $main-text: #ffffff;
+$main-text-with-opacity: rgba(255, 255, 255, 0.9);
 $additional-text: #d1ae80;
 
 $header-height: 140px;

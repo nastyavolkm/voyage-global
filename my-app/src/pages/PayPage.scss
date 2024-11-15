@@ -1,0 +1,65 @@
+@import '../index.scss';
+
+.pay-page {
+  font-size: 14px;
+  color: $main-bg;
+  display: grid;
+  gap: 20px;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
+  grid-template-areas:
+    "div1 div2"
+    "div3 div3";
+
+.div1 { grid-area: div1; }
+.div2 { grid-area: div2; }
+.div3 { grid-area: div3; }
+
+ @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "div1"
+      "div2"
+      "div3";
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: $main-text-with-opacity;
+    -webkit-box-shadow: 10px 10px 45px 2px rgba(63, 130, 158, 1);
+    -moz-box-shadow: 10px 10px 45px 2px rgba(63, 130, 158, 1);
+    box-shadow: 10px 10px 45px 2px rgba(63, 130, 158, 1);
+
+    a {
+      color: $additional-text;
+    }
+
+    &-link {
+      color: $additional-text;
+      text-decoration: underline;
+      display: block;
+      width: 100%;
+      text-align: right;
+
+      &:hover, :active {
+        color: $main-bg;
+      }
+    }
+
+    &-img {
+      width: 90%;
+      height: auto;
+
+      &-1 {
+        width: auto;
+        height: auto;
+        align-self: center;
+      }
+    }
+  }
+}

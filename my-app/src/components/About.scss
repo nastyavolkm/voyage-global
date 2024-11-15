@@ -1,18 +1,21 @@
 @import '../index.scss';
 @import '../styles/mixins/fonts';
+@import '../styles/animations/slidein';
 
 .about {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 0 20px 20px;
+  gap: 30px;
+  padding: 20px;
   color: $main-bg;
 
   &__text {
-    padding: 40px;
+    padding: 30px;
     flex: 1;
+    text-align: justify;
 
     &.bold {
       font-size: 18px;
@@ -23,9 +26,10 @@
   }
 
   &__img {
-    max-width: 400px;
-    width: 400px;
-    height: auto;
+    max-height: 100%;
+    width: 250px;
+    height: 350px;
+    background-size: cover;
   }
 
   &__wrapper {
@@ -35,83 +39,117 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    background: $main-text;
-  }
+    background-color: $main-text-with-opacity;
+    animation-duration: 1s;
+    animation-name: slidein;
+    border-radius: 0 50px 50px 0;
+    -webkit-box-shadow: 10px 10px 45px 2px rgba(63,130,158,1);
+    -moz-box-shadow: 10px 10px 45px 2px rgba(63,130,158,1);
+    box-shadow: 10px 10px 45px 2px rgba(63,130,158,1);
 
-  &__ceo {
-    width: 70%;
-    background: $main-bg;
-    align-self: flex-end;
-    color: $main-text;
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-
-    &-contacts {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-
-    &-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      padding: 40px;
-    }
-
-    &-img {
-      flex: 0 0 250px;
-      width: 250px;
-      height: 250px;
-      background-size: cover;
-    }
-
-    &-text {
-      flex: 1;
+    @media (max-width: 650px) {
+      border-radius: 0 0 50px 0;
     }
   }
 
   &__managers {
     width: 100%;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 20px;
 
-    &-item {
-      display: flex;
+    @media (max-width: 849px) {
       flex-direction: column;
       align-items: center;
+    }
+
+    &-item {
+      flex-basis: 100%;
+      max-width: 570px;
+      display: flex;
+      align-items: center;
       justify-content: space-between;
-      background: $main-text;
-      padding: 10px;
+      gap: 5px;
+      background-color: $main-text-with-opacity;
       text-align: center;
+      padding: 40px;
+      -webkit-box-shadow: 10px 10px 45px 2px rgba(63,130,158,1);
+      -moz-box-shadow: 10px 10px 45px 2px rgba(63,130,158,1);
+      box-shadow: 10px 10px 45px 2px rgba(63,130,158,1);
+      border-radius: 78% 22% 81% 19% / 30% 82% 18% 70% ;
+
+      @media (min-width: 1100px) and (max-width: 1245px) {
+        max-width: 500px;
+      }
+
+      @media (min-width: 850px) and (max-width: 1099px) {
+        flex-direction: column;
+        border-radius: 74% 26% 93% 7% / 46% 90% 10% 54%  ;
+      }
+
+      @media (min-width: 651px) and (max-width: 849px) {
+        flex-direction: row;
+      }
+
+      @media (max-width: 650px) {
+        max-width: 100%;
+        flex-direction: column;
+        border-radius: 50px;
+      }
+
+      &-wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+      }
 
       &-contacts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: $main-bg;
         color: $main-text;
-        padding: 5px;
+        padding: 10px;
         width: 100%;
+        gap: 5px;
+        border-radius: 12px;
+
+        @media (max-width: 650px) {
+          max-width: 100%;
+          flex-direction: column;
+        }
 
         &-item {
           display: flex;
           justify-content: center;
           align-items: center;
           gap: 5px;
+
         }
       }
 
       &-img {
-        min-width: 100px;
-        max-width: 200px;
-        height: 100px;
-        max-height: 200px;
-        border-radius: 50%;
+        min-width: 200px;
+        min-height: 300px;
+        width: 200px;
+        height: 300px;
+        max-height: 300px;
         background-size: cover;
+        border-radius: 44% 56% 81% 19% / 30% 2% 98% 70% ;
+
+        @media (min-width: 1100px) and (max-width: 1245px) {
+          min-width: 150px;
+          min-height: 200px;
+          width: 150px;
+          height: 200px;
+        }
       }
     }
+  }
+
+  .contacts__item {
+    width: max-content;
   }
 }
