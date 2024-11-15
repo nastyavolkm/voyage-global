@@ -10,4 +10,10 @@
   margin-top: auto;
   color: $main-text;
   background: $main-bg;
+
+  &__container {
+    &-info {
+      font-size: 12px;
+    }
+  }
 }

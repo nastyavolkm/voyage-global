@@ -13,6 +13,7 @@
     color: $main-text;
     animation-duration: 1s;
     animation-name: slidein;
+    border-radius: 20px;
   }
 
   &__heading {
@@ -27,8 +28,9 @@
     padding: 10px;
     animation-duration: 1s;
     animation-name: slidein;
-    width: 80%;
+    width: 100%;
     align-self: center;
+    border-radius: 20px;
   }
 
   &__map {

@@ -6,7 +6,11 @@ export function Footer() {
     return (
         <footer className='footer'>
             <div className='footer__container'>
-                OOO "Вояж Глобал" УНП 192567413
+                Oбщество с ограниченной ответственностью "Вояж Глобал" УНП 192567413
+                <div className='footer__container-info'>
+                    <p>Республика Беларусь, г.Минск, ул.В.Хоружей,3</p>
+                    <p>Время работы: пн-вскр 09:00 - 19:00</p>
+                </div>
             </div>
             <Socials/>
         </footer>

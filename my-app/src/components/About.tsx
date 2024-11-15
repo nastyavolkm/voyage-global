@@ -1,17 +1,14 @@
 import React from 'react';
 import './About.scss';
-import { ceo, managers } from "../configs/managers";
-import office from '../assets/office-about.jpg';
+import { managers } from "../configs/managers";
+import { officeImages } from '../configs/officeImages';
+import { Carousel } from "./Carousel";
 
 export function About() {
     return (
         <div className='about'>
             <div className='about__wrapper'>
-                <img
-                    className='about__img'
-                    src={office}
-                    alt='офис'
-                />
+                <Carousel images={officeImages}/>
                 <div className='about__text'>
                     <p className='about__text bold'>Кто мы?</p>
                     <p>Наша компания Вояж Глобал предоставляет широкий спектр туристических услуг. Мы поможем вам
@@ -25,14 +22,19 @@ export function About() {
                         отличный сервис и низкие цены.</p>
                 </div>
             </div>
-            <div className='about__ceo'>
+            <div className='about__managers'>{managers.map((manager) => <div
+                key={manager.id}
+                className='about__managers-item'
+            >
                 <div
-                    className='about__ceo-img'
-                    style={{ backgroundImage: `url(${require(`../assets/${ceo.avatar}`)})` }}
+                    style={{ backgroundImage: `url(${require(`../assets/${manager.avatar}`)})` }}
+                    className='about__managers-item-img'
                 />
-                <div className='about__ceo-wrapper'>
-                    <span className='about__ceo-text'>{ceo.text}</span>
-                    <div className='about__ceo-contacts'>Связаться со мной: {ceo.contacts.map((contact) => <a
+                <div className='about__managers-item-wrapper'>
+                    <span>{manager.text}</span>
+                    <div className='about__managers-item-contacts'>
+                        {manager.id}
+                        {manager.contacts.map((contact) => <a
                             key={contact.id}
                             href={`${contact.action}${contact.value}`}
                             target='_blank'
@@ -45,34 +47,8 @@ export function About() {
                             />
                             {contact.value}
                         </a>
-                    )}
-                    </div>
+                    )}</div>
                 </div>
-            </div>
-            <div className='about__managers'>{managers.map((manager) => <div
-                key={manager.id}
-                className='about__managers-item'
-            >
-                <div
-                    style={{ backgroundImage: `url(${require(`../assets/${manager.avatar}`)})` }}
-                    className='about__managers-item-img'
-                />
-                {manager.id}
-                <span>{manager.text}</span>
-                <div className='about__managers-item-contacts'>{manager.contacts.map((contact) => <a
-                        key={contact.id}
-                        href={`${contact.action}${contact.value}`}
-                        target='_blank'
-                        className='contacts__item'
-                    >
-                        <img
-                            className='contacts__item-img'
-                            src={require(`../assets/${contact.icon}`)}
-                            alt={contact.id}
-                        />
-                        {contact.value}
-                    </a>
-                )}</div>
             </div>)}
             </div>
         </div>
