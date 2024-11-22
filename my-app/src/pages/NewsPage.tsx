@@ -10,12 +10,6 @@ export function NewsPage() {
                 key={item.title}
                 className='news__item'
             >
-                <div className='news__item-img-wrapper'>{item.img.map((src) => <ImageComponent
-                        src={require(`../assets/news/${src}`)}
-                        small={{ width: '300px', height: 'auto' }}
-                        big={{ width: 'auto', height: '90vh' }}
-                    />
-                )}</div>
                 <div className='news__item-wrapper'>
                     <p className='news__item-title'>{item.title}</p>
                     <span
@@ -23,6 +17,12 @@ export function NewsPage() {
                         dangerouslySetInnerHTML={{ __html: item.text }}
                     ></span>
                 </div>
+                <div className='news__item-img-wrapper'>{item.img.map((src) => <ImageComponent
+                        src={require(`../assets/news/${src}`)}
+                        small={{ width: '250px', height: 'auto' }}
+                        big={{ width: 'auto', height: '90vh' }}
+                    />
+                )}</div>
             </div>)}
         </div>
     )
