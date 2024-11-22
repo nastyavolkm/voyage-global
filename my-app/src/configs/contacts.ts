@@ -2,13 +2,13 @@ export const contacts = [
     {
         id: 'телефон',
         icon: 'phone.svg',
-        value: '+375-17-888-77-66',
+        value: '+375445389727',
         action: 'tel:'
     },
     {
         id: 'мобильный',
         icon: 'phone.svg',
-        value: '+375-44-999-888-77',
+        value: '+375445997546',
         action: 'tel:',
     },
     {
@@ -20,7 +20,7 @@ export const contacts = [
     {
         id: 'address',
         icon: 'location.svg',
-        value: 'Минск, ул.Веры Хоружей, 3, 3-й этаж',
+        value: 'г.Минск, ул.Веры Хоружей, 3, офис 305а',
         action: 'https://yandex.by/maps/-/CDTQJTye',
     }
 ];
