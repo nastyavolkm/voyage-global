@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/voyage-global/static/css/main.03d27364.css",
-    "main.js": "/voyage-global/static/js/main.313a723c.js",
+    "main.css": "/voyage-global/static/css/main.905fba67.css",
+    "main.js": "/voyage-global/static/js/main.77b887f7.js",
     "static/js/453.ed3810f9.chunk.js": "/voyage-global/static/js/453.ed3810f9.chunk.js",
     "static/media/bg-5.png": "/voyage-global/static/media/bg-5.a35ca6b5aea885614d28.png",
     "static/media/sh3.jpg": "/voyage-global/static/media/sh3.b94c06e3a7e025e005eb.jpg",
@@ -34,12 +34,12 @@
     "static/media/email.svg": "/voyage-global/static/media/email.17501af4b6e0bb9f5727.svg",
     "static/media/location.svg": "/voyage-global/static/media/location.ff50e44be32588fcde30.svg",
     "index.html": "/voyage-global/index.html",
-    "main.03d27364.css.map": "/voyage-global/static/css/main.03d27364.css.map",
-    "main.313a723c.js.map": "/voyage-global/static/js/main.313a723c.js.map",
+    "main.905fba67.css.map": "/voyage-global/static/css/main.905fba67.css.map",
+    "main.77b887f7.js.map": "/voyage-global/static/js/main.77b887f7.js.map",
     "453.ed3810f9.chunk.js.map": "/voyage-global/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03d27364.css",
-    "static/js/main.313a723c.js"
+    "static/css/main.905fba67.css",
+    "static/js/main.77b887f7.js"
   ]
 }
