@@ -1,6 +1,7 @@
 import React from 'react';
 import { news } from "../configs/news";
 import './NewsPage.scss';
+import { ImageComponent } from "../components/ImageModal";
 
 export function NewsPage() {
     return (
@@ -9,16 +10,19 @@ export function NewsPage() {
                 key={item.title}
                 className='news__item'
             >
-                <img
-                    className='news__item-img'
-                    src={require(`../assets/${item.img}`)}
-                    alt={item.title}
-                />
                 <div className='news__item-wrapper'>
                     <p className='news__item-title'>{item.title}</p>
-                    <span className='news__item-text'>{item.text}</span>
+                    <span
+                        className='news__item-text'
+                        dangerouslySetInnerHTML={{ __html: item.text }}
+                    ></span>
                 </div>
-                <p className='news__item-date'>{item.date}</p>
+                <div className='news__item-img-wrapper'>{item.img.map((src) => <ImageComponent
+                        src={require(`../assets/news/${src}`)}
+                        small={{ width: '250px', height: 'auto' }}
+                        big={{ width: 'auto', height: '90vh' }}
+                    />
+                )}</div>
             </div>)}
         </div>
     )
