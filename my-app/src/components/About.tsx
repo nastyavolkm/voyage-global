@@ -75,9 +75,14 @@ export function About() {
                     big={{ width: '400px', height: 'auto' }}
                 />
                 <ImageComponent
-                    src={require('../assets/svid.jpg')}
+                    src={require('../assets/des.jpg')}
                     small={{ width: '200px', height: 'auto' }}
                     big={{ width: '400px', height: 'auto' }}
+                />
+                <ImageComponent
+                    src={require('../assets/rata.jpg')}
+                    small={{ width: 'auto', height: '200px' }}
+                    big={{ width: 'auto', height: '400px' }}
                 />
             </div>
         </div>

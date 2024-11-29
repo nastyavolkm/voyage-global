@@ -38,7 +38,7 @@ export const managers = [
     },
     {
         id: 'Ольга',
-        avatar: 'manager1.jpg',
+        avatar: 'manager2.jpg',
         text: 'Привет. Я Ольга. С нетерпением жду нашей встречи.',
         contacts: [
             {

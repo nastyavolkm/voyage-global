@@ -183,6 +183,7 @@
   &__documents {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap: 40px;
     background-color: $main-text-with-opacity;
