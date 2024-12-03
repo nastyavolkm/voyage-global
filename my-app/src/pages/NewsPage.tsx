@@ -17,7 +17,8 @@ export function NewsPage() {
                         dangerouslySetInnerHTML={{ __html: item.text }}
                     ></span>
                 </div>
-                <div className='news__item-img-wrapper'>{item.img.map((src) => <ImageComponent
+                <div className='news__item-img-wrapper'>{item.img.map((src, index) => <ImageComponent
+                        key={index}
                         src={require(`../assets/news/${src}`)}
                         small={{ width: '250px', height: 'auto' }}
                         big={{ width: 'auto', height: '90vh' }}
