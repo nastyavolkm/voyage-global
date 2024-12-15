@@ -6,11 +6,6 @@
   background: $main-text;
   border-radius: 50px;
 
-  @media (max-width: 600px) {
-    max-width: 90%;
-    width: 90%;
-  }
-
   &__btn {
     position: absolute;
     top: 50%;
