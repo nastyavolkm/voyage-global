@@ -35,7 +35,9 @@ export function About() {
                         <li className='about__text-list-item pro'>Мы всегда готовы с холодной головой решать все нестандартные ситуации.</li>
                     </b>
                     </ul>
-                    <p><b>✨Мечтай. Исследуй. Открывай.</b></p>
+                    <p className='about__moto left'><b>✨Мечтай.</b></p>
+                    <p className='about__moto center'><b>✨Исследуй.</b></p>
+                    <p className='about__moto right'><b>✨Открывай.</b></p>
                     <p className='about__text right'><i>Всегда ваш, ВояжГлобал</i></p>
                 </div>
             </div>
