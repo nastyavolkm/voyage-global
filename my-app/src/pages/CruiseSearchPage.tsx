@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import stub from '../assets/tour-search.png';
 import './TourSearchPage.scss';
-import { createConnection } from "node:net";
 
 export function CruiseSearchPage() {
+    let script: HTMLScriptElement;
     const loadScript = () => {
         if (!document.getElementById("ces-script")) {
-            const script = document.createElement("script");
+            script = document.createElement("script");
 
             script.id = "ces-script";
             script.src = "https://widget.gocruise.ru/js/app.js";
@@ -16,7 +15,7 @@ export function CruiseSearchPage() {
             window['cesSettings'] = {
                 currencies: ["USD", "BYN", "EUR"],
             };
-            document.body.appendChild(script);
+            document.getElementById('ces-script-div')?.appendChild(script);
         }
 
         if (!document.getElementById("ces-styles")) {
@@ -29,8 +28,14 @@ export function CruiseSearchPage() {
     }
     useEffect(() => {
         loadScript();
+        return () => {
+            document.getElementById('ces-script-div')?.removeChild(script);
+        };
     }, []);
     return (
-        <div id='ces'></div>
-    )
+        <div>
+            <div id="ces-script-div"></div>
+            <div id="ces"></div>
+        </div>
+    );
 }
