@@ -6,6 +6,7 @@ import { ContactsPage } from "./pages/ContactsPage";
 import './styles/custom-scroll.scss';
 import './App.scss';
 import { TourSearchPage } from "./pages/TourSearchPage";
+import { ToursPage } from "./pages/ToursPage";
 import { NewsPage } from "./pages/NewsPage";
 import { Footer } from "./components/Footer";
 import { FeedbacksPage } from "./pages/FeedbackPage";
@@ -33,6 +34,10 @@ function App() {
                             <Route
                                 path='/'
                                 element={<TourSearchPage/>}
+                            ></Route>
+                            <Route
+                                path='/tours'
+                                element={<ToursPage/>}
                             ></Route>
                             <Route
                                 path='/cruises'

@@ -6,6 +6,7 @@ export function Navigation() {
     return (
         <nav className='navigation'>
             <NavLink className={({isActive}) => isActive ? 'navigation__item active' : 'navigation__item'} to='/'>Подбор тура</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'navigation__item active' : 'navigation__item'} to='/tours'>Наши туры</NavLink>
             {/*<NavLink className={({isActive}) => isActive ? 'navigation__item active' : 'navigation__item'} to='/cruises'>Подбор круиза</NavLink>*/}
             <NavLink className={({isActive}) => isActive ? 'navigation__item active' : 'navigation__item'} to='/about'>О нас</NavLink>
             <NavLink className={({isActive}) => isActive ? 'navigation__item active' : 'navigation__item'} to='/news'>Новости</NavLink>

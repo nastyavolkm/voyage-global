@@ -1,15 +1,13 @@
 import React from 'react';
 import './About.scss';
 import { managers } from "../configs/managers";
-import { officeImages } from '../configs/officeImages';
-import { Carousel } from "./Carousel";
 import { ImageComponent } from "./ImageModal";
 
 export function About() {
     return (
         <div className='about'>
             <div className='about__wrapper'>
-                <Carousel images={officeImages}/>
+                {/*<Carousel images={officeImages}/>*/}
                 <div className='about__text'>
                     <p className='about__text bold'>Воплощать мечты в реальность - наша работа.</p>
                     <p>
