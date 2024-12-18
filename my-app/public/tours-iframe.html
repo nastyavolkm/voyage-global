@@ -25,9 +25,13 @@
             const height = document.body.scrollHeight;
             window.parent.postMessage({ frameHeight: height + 20}, '*');
         };
-        window.onload = () => {
-            setTimeout(sendHeight, 100);
-        }
+        const observer = new MutationObserver((mutations) => {
+            sendHeight();
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true, attributes: true });
+
+        window.onunload = () => observer.disconnect();
         window.onresize = sendHeight;
 		</script>
 		</div>
