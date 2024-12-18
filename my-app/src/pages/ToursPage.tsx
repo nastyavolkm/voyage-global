@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export function ToursPage() {
+    const [iframeHeight, setIframeHeight] = useState('200px');  // Default height
+
+    useEffect(() => {
+        const handleMessage = (event: MessageEvent) => {
+            if (event.data.frameHeight) {
+                setIframeHeight(`${event.data.frameHeight}px`);
+            }
+        };
+
+        window.addEventListener('message', handleMessage);
+
+        return () => {
+            window.removeEventListener('message', handleMessage);
+        };
+    }, []);
     return (
-        <div>
-            <iframe
-                src="/tours-iframe.html"
-                style={{ width: '100%', height: '500px', border: 'none' }}
-                title="Special Content Frame"
-            ></iframe>
-        </div>
+        <iframe
+            scrolling={'no'}
+            className='tours-iframe'
+            src="/tours-iframe.html"
+            style={{ width: '100%', height: iframeHeight, border: 'none' }}
+            title="Tours"
+        ></iframe>
     );
 }

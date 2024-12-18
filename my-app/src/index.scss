@@ -1,6 +1,7 @@
 @import './styles/mixins/fonts';
 
 body {
+  height:100%;
   margin: 0;
   @include font-main-normal;
   -webkit-font-smoothing: antialiased;
@@ -14,10 +15,8 @@ body {
     background-size: auto;
   }
 
-  @media screen and (max-device-width: 480px){
-    body{
-      -webkit-text-size-adjust: 100%;
-    }
+  @media screen and (max-device-width: 480px) {
+    -webkit-text-size-adjust: none;
   }
 
   a {
@@ -28,6 +27,16 @@ body {
   p {
     margin: 0;
   }
+
+  .tours-iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+}
+html {
+  height: 100%;
 }
 
 * {

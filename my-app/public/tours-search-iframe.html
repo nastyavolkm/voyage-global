@@ -12,19 +12,32 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden;
+            overflow: visible;
         }
 
         #container {
             width: 100%;
             height: 100%;
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
 		</style>
 	</head>
 	<body>
 		<div id='container'>
 			<script type="text/javascript" src="//tourclient.ru/f/jsboot/crm163208/find_tour_form?style=default&conf=default"></script>
 			<script type="text/javascript" src="//tourclient.ru/f/jsboot/crm163208/find_tour_offers?style=default&conf=default"></script>
+			<script>
+          const sendHeight = () => {
+              const height = document.body.scrollHeight;
+              window.parent.postMessage({ frameHeight: height + 20}, "*");
+          };
+          window.onload = sendHeight;
+          window.onresize = sendHeight;
+			</script>
 		</div>
 	</body>
 </html>
