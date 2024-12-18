@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 export function ToursPage() {
-    const [iframeHeight, setIframeHeight] = useState('200px');  // Default height
+    const [iframeHeight, setIframeHeight] = useState('10px');  // Default height
 
     useEffect(() => {
         const handleMessage = (event: MessageEvent) => {

@@ -11,8 +11,7 @@
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
-            overflow: visible;
+            height: auto;
         }
 
         #container {
@@ -35,7 +34,9 @@
               const height = document.body.scrollHeight;
               window.parent.postMessage({ frameHeight: height + 20}, "*");
           };
-          window.onload = sendHeight;
+          window.onload = () => {
+              setTimeout(sendHeight, 100);
+          };
           window.onresize = sendHeight;
 			</script>
 		</div>

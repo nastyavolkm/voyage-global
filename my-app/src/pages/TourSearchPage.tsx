@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './TourSearchPage.scss';
 
 export function TourSearchPage() {
-    const [iframeHeight, setIframeHeight] = useState('100px');  // Default height
+    const [iframeHeight, setIframeHeight] = useState('10px');  // Default height
 
     useEffect(() => {
         const handleMessage = (event: MessageEvent) => {
