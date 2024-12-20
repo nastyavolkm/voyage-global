@@ -14,7 +14,7 @@ export const contacts = [
     {
         id: 'email',
         icon: 'email.svg',
-        value: 'nikaborko@mail.ru',
+        value: 'info@vglobal.by',
         action: 'mailto:',
     },
     {

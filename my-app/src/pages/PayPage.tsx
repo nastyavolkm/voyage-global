@@ -91,7 +91,7 @@ export function PayPage() {
                 <a
                     className='pay-page__block-link'
                     target='_blanc'
-                    href='https://th.by/public-offer'
+                    href='/contract.pdf'
                 >Публичный договор
                 </a>
             </div>

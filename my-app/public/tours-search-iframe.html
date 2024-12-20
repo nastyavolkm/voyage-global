@@ -34,7 +34,7 @@
               const height = document.body.scrollHeight;
               window.parent.postMessage({ frameHeight: height + 20}, "*");
           };
-          const observer = new MutationObserver((mutations) => {
+          const observer = new MutationObserver(() => {
               sendHeight();
           });
 
